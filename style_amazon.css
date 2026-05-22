@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: #e2e7e6;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+}
+
+/* ADDRESS */
+
+.address{
+    color: #cccccc;
+    font-size: 0.75rem;
+}
+
+.country{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* SEARCH BAR */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 60px;
+    text-align: center;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+}
+
+.search-icon{
+    background-color: #febd68;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* TEXT */
+
+span{
+    font-size: 0.75rem;
+}
+
+.nav-second{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* CART */
+
+.cart-logo i{
+    font-size: 30px;
+}
+
+/* PANEL */
+
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-options{
+    display: flex;
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-options p{
+    margin-left: 20px;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* HERO SECTION */
+
+.hero-section{
+    background-image: url("hero_image.jpg");
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero-msg a{
+    text-decoration: none;
+    color: #007185;
+}
+
+/* SHOP SECTION */
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    padding-bottom: 20px;
+}
+
+.box{
+    width: 23%;
+    background-color: white;
+    padding: 20px 15px 15px;
+    margin-top: 15px;
+}
+
+.box-content h2{
+    font-size: 1.3rem;
+}
+
+.box-content a{
+    text-decoration: none;
+    color: #007185;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media(max-width: 1024px){
+
+    .box{
+        width: 45%;
+    }
+
+    .nav-search{
+        width: 400px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px){
+
+    .navbar{
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav-search{
+        width: 100%;
+    }
+
+    .panel{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .panel-options{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .panel-options p{
+        margin: 10px;
+    }
+
+    .hero-section{
+        height: 250px;
+    }
+
+    .hero-msg{
+        height: auto;
+        font-size: 0.75rem;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+    .box-img{
+        height: 250px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width: 480px){
+
+    .search-select{
+        width: 50px;
+        font-size: 0.7rem;
+    }
+
+    .search-input{
+        font-size: 0.8rem;
+    }
+
+    .cart-logo i{
+        font-size: 25px;
+    }
+
+    .hero-msg{
+        font-size: 0.7rem;
+    }
+
+    .box-content h2{
+        font-size: 1.1rem;
+    }
+}
+a{
+    color:black;
+}
